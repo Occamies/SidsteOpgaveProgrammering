@@ -1,0 +1,24 @@
+{
+  "navigation": [
+    {
+      "planet":"Earth",
+      "src":"../assets/earth.jpg",
+      "placementZ":"0.15"
+    },
+    {
+      "planet":"Mars",
+      "src":"../assets/mars.jpg",
+      "placementZ":"0.05"
+    },
+    {
+      "planet":"Moon",
+      "src":"../assets/moon.jpg",
+      "placementZ":"-0.05"
+    },
+    {
+      "planet":"Jupitor",
+      "src":"../assets/jupitor.jpg",
+      "placementZ":"-0.15"
+    }
+  ]
+}

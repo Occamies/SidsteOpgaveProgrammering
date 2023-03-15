@@ -7,7 +7,7 @@ import { Vector3 } from "three";
 export default class World {
   constructor(settings) {
 
-    console.log(settings)
+
 
     //*lave vores scene med kamera  */
 
@@ -23,7 +23,7 @@ export default class World {
     this.camera = new THREE.PerspectiveCamera(
       50,
       window.innerWidth / window.innerHeight,
-      0.1,
+      0.001,
       150
     );
 
