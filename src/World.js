@@ -3,12 +3,8 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { InteractionManager } from "three.interactive";
 import { Vector3 } from "three";
 
-
 export default class World {
   constructor(settings) {
-
-
-
     //*lave vores scene med kamera  */
 
     this.scene = new THREE.Scene();
@@ -32,9 +28,6 @@ export default class World {
       settings.setCameraPos[1],
       settings.setCameraPos[2]
     );
-
-
-    
 
     this.camera.lookAt(this.scene.position);
     this.scene.add(this.camera);
@@ -65,9 +58,9 @@ export default class World {
     );
 
     //*orbit Control  */
-    if(settings.orbitControl) {
+    if (settings.orbitControl) {
       this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-       } 
+    }
 
     //*END orbit Control  */
 
@@ -93,7 +86,7 @@ export default class World {
       color: 0x1520a6,
       side: THREE.DoubleSide,
     });
-    
+
     const floor = new THREE.Mesh(geometryFloor, materialFloor);
     floor.rotation.x = Math.PI / 2;
     floor.position.y = 0;
